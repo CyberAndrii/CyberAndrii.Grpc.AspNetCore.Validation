@@ -1,0 +1,34 @@
+name: Build and Publish
+
+on:
+  create:
+    tags:
+      - '*'
+  push:
+    branches:
+      - '**'
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 6.x
+
+      - name: Build
+        run: make build REPOSITORY_URL="${{ github.server_url }}/${{ github.repository }}"
+
+      - name: Push to NuGet
+        if: ${{ github.event_name == 'create' && github.event.ref_type == 'tag' }}
+        run: make push KEY="${{ secrets.NUGET_KEY }}" SOURCE="${{ secrets.NUGET_SOURCE }}"

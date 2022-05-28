@@ -1,8 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <PropertyGroup>
+    <PackageId>CyberAndrii.Grpc.AspNetCore.Validation</PackageId>
+  </PropertyGroup>
+
   <ItemGroup>
-    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.0.1" />
-    <PackageReference Include="Grpc.AspNetCore" Version="2.46.0" />
+    <None Include="../../README.md" Pack="true" PackagePath="\" Visible="false"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.0.1"/>
+    <PackageReference Include="Grpc.AspNetCore" Version="2.46.0"/>
   </ItemGroup>
 
 </Project>
