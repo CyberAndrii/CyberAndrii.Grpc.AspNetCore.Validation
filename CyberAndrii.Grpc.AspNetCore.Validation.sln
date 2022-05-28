@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B5AA8ADC-CF94-455B-8637-6B6B33E2ACA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyberAndrii.Grpc.AspNetCore.Validation", "src\CyberAndrii.Grpc.AspNetCore.Validation\CyberAndrii.Grpc.AspNetCore.Validation.csproj", "{4611CB3C-B0AA-4584-AA91-91B9A57539D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4611CB3C-B0AA-4584-AA91-91B9A57539D7} = {B5AA8ADC-CF94-455B-8637-6B6B33E2ACA4}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4611CB3C-B0AA-4584-AA91-91B9A57539D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4611CB3C-B0AA-4584-AA91-91B9A57539D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4611CB3C-B0AA-4584-AA91-91B9A57539D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4611CB3C-B0AA-4584-AA91-91B9A57539D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
