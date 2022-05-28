@@ -17,7 +17,7 @@ ifndef KEY
 	$(error NuGet API key is not set)
 endif
 	$(eval SOURCE ?= https://api.nuget.org/v3/index.json)
-	dotnet nuget push */src/*/bin/Release/*.$(TAG).nupkg \
+	dotnet nuget push src/*/bin/Release/*.$(TAG).nupkg \
 		--skip-duplicate \
 		--api-key "$(KEY)" \
 		--source "$(SOURCE)"
