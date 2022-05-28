@@ -2,6 +2,9 @@
 
 GRPC request validator middleware with detailed error response and proper client side localization support.
 
+[![Build and Publish](https://github.com/CyberAndrii/CyberAndrii.Grpc.AspNetCore.Validation/actions/workflows/build.yml/badge.svg)](https://github.com/CyberAndrii/CyberAndrii.Grpc.AspNetCore.Validation/actions/workflows/build.yml)
+[![Nuget](https://img.shields.io/nuget/v/CyberAndrii.Grpc.AspNetCore.Validation)](https://www.nuget.org/packages/CyberAndrii.Grpc.AspNetCore.Validation)
+
 ## Setup
 
 Create a new validator using [FluentValidation](https://docs.fluentvalidation.net/en/latest/) library:
