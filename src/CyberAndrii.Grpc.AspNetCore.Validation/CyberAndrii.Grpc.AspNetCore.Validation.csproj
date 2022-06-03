@@ -2,10 +2,11 @@
 
   <PropertyGroup>
     <PackageId>CyberAndrii.Grpc.AspNetCore.Validation</PackageId>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="../../README.md" Pack="true" PackagePath="\" Visible="false"/>
+    <None Include="../../README.md" Pack="true" PackagePath="/README.md" Visible="false"/>
   </ItemGroup>
 
   <ItemGroup>
